@@ -35,6 +35,6 @@ jobs:
           docker tag ntampakas-drill-mock:latest 490752553772.dkr.ecr.eu-central-1.amazonaws.com/ntampakas-drill-mock:latest
           docker push 490752553772.dkr.ecr.eu-central-1.amazonaws.com/ntampakas-drill-mock:latest
 
-#      - name: Create Deployment
-#        run: |
-#          .github/scripts/deploy.sh
+      - name: Create Deployment
+        run: |
+          .github/scripts/deploy.sh

@@ -1,0 +1,15 @@
+applicationName: 'ntampakas-drill'
+deploymentGroupName: 'ntampakas-drill'
+revision:
+  revisionType: AppSpecContent
+  appSpecContent:
+    content: |
+      version: 0.0
+      Resources:
+        - TargetService:
+            Type: AWS::ECS::Service
+            Properties:
+              TaskDefinition: "arn:aws:ecs:eu-central-1:490752553772:task-definition/ntampakas-drill-mock:1"
+              LoadBalancerInfo:
+                ContainerName: "ntampakas-drill-mock"
+                ContainerPort: 8000
