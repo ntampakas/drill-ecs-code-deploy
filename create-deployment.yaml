@@ -1,5 +1,5 @@
 applicationName: 'ntampakas-drill'
-deploymentGroupName: 'ntampakas-drill'
+deploymentGroupName: 'ntampakas-drill-group'
 revision:
   revisionType: AppSpecContent
   appSpecContent:
